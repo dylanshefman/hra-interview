@@ -1,4 +1,4 @@
 Total annual rental income for the building: $7,047,000
 Space that generates the most gross rental income: Space 11
 Vacancy rate of retail space in the building: 7.84%
-Average rent per square foot of leased retail spaces in the building: $21.00
+Average rent per square foot of leased retail spaces in the building: $22.57

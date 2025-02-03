@@ -45,8 +45,6 @@ demographic_stats = [
 
 # calculate correlations
 correlations = df[socioeconomic_indicators + demographic_stats].corr()
-with open("correlations.txt", "w") as f:
-    f.write(correlations.to_string())
 correlations_display = correlations.rename(index=full_names, columns=full_names)
 
 

@@ -51,7 +51,7 @@ vacancy_rate_retail = cursor.fetchone()[0]
 
 # Q4: average rent per square foot of leased retail spaces in the building
 average_rent_per_sf_leased_retail_query = """
-SELECT SUM(rentable_sf * annual_rent_psf) / SUM(rentable_sf) AS average_rent_per_sf
+SELECT AVG(annual_rent_psf) AS average_rent_per_sf
 FROM spaces
 WHERE use = 'retail' AND leased = 1
 """

@@ -4,6 +4,11 @@ from matplotlib.colors import Normalize
 from matplotlib import cm
 
 
+# utility function to normalize a series
+def normalize(series):
+    return (series - series.min()) / (series.max() - series.min())
+
+
 # load data and rename columns
 df = pd.read_csv("table1.csv")
 df.columns = [
@@ -32,8 +37,8 @@ df["avg_num_vehicles_per_person"] = df["avg_num_vehicles"] / df["avg_hh_size"]
 
 
 # calculate benefit score
-pop_density_norm = (df["pop_density"] - df["pop_density"].min()) / (df["pop_density"].max() - df["pop_density"].min())
-vehicles_per_person_norm = (df["avg_num_vehicles_per_person"] - df["avg_num_vehicles_per_person"].min()) / (df["avg_num_vehicles_per_person"].max() - df["avg_num_vehicles_per_person"].min())
+pop_density_norm = normalize(df["pop_density"])
+vehicles_per_person_norm = normalize(df["avg_num_vehicles_per_person"])
 benefit_score = pop_density_norm - vehicles_per_person_norm
 
 
@@ -51,8 +56,7 @@ for i in range(df.shape[0]):
              df["avg_num_vehicles_per_person"].iloc[i] + 0.02,
              df["area"].iloc[i], 
              fontsize=10, 
-             fontweight='light', 
-             fontname="Arial",
+             fontweight='light',
              color='black')
 plt.suptitle("Chart 1", fontsize=16, y=1.02)
 plt.title("Which Area Would Most Benefit from Transit Investment?", fontsize=10, pad=15)
