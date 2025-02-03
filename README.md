@@ -3,4 +3,4 @@
 ## Part 1
 
 ### Question 1
-- ![table logo](img/table.png) table1.csv → ![analysis logo](analysis.png) analysis1.py → ![chart logo](img/chart.png) chart1.png → ![conclusions logo](img/conclusion.png) conclusions
+<img src="img/table.png" alt="table logo" width="50"/> table1.csv → <img src="img/analysis.png" alt="analysis logo" width="50"/> analysis1.py → <img src="img/chart.png" alt="chart logo" width="50"/> chart1.png → <img src="img/conclusion.png" alt="conclusions logo" width="50"/> conclusions
