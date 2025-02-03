@@ -1,0 +1,15 @@
+Category,Use,Leased?,Rentable SF,Rent PSF per Year
+Space 1,Retail,Yes,"5,000 SF",$20
+Space 2,Retail,No,"4,000 SF",$19
+Space 3,Retail,Yes,"6,000 SF",$25
+Space 4,Retail,Yes,"7,500 SF",$24
+Space 5,Retail,Yes,"10,200 SF",$12
+Space 6,Retail,Yes,"5,500 SF",$18
+Space 7,Retail,Yes,"8,200 SF",$22
+Space 8,Retail,Yes,"4,600 SF",$37
+Space 9,Office,No,"20,000 SF",$35
+Space 10,Office,Yes,"35,000 SF",$42
+Space 11,Office,Yes,"60,000 SF",$25
+Space 12,Office,Yes,"15,000 SF",$50
+Space 13,Office,Yes,"25,000 SF",$45
+Space 14,Office,Yes,"30,000 SF",$40
