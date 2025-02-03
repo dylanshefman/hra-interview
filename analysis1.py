@@ -54,10 +54,10 @@ for i in range(df.shape[0]):
              fontweight='light', 
              fontname="Arial",
              color='black')
-plt.suptitle("Chart 1", fontsize=16, y=1.02)  # Adjusted y to move subtitle up
-plt.title("Which Area Would Most Benefit from Transit Investment?", fontsize=10, pad=15)  # Increased pad to avoid overlap
-plt.xlabel("Population Density (people per acre)", fontsize=12, fontweight='bold', fontname="Arial")
-plt.ylabel("Average Number of Vehicles per Person", fontsize=12, fontweight='bold', fontname="Arial")
+plt.suptitle("Chart 1", fontsize=16, y=1.02)
+plt.title("Which Area Would Most Benefit from Transit Investment?", fontsize=10, pad=15)
+plt.xlabel("Population Density (people per acre)", fontsize=12, fontweight='bold')
+plt.ylabel("Average Number of Vehicles per Person", fontsize=12, fontweight='bold')
 plt.colorbar(scatter, label='Benefit Score')
 plt.grid(True)
 plt.savefig("chart1.png", dpi=300, bbox_inches='tight')

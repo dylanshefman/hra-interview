@@ -46,7 +46,7 @@ df["avg_num_vehicles_per_person"] = df["avg_num_vehicles"] / df["avg_hh_size"]
 # plot average number of vehicles per person vs socioeconomic indicators
 fig, ax1 = plt.subplots(figsize=(12, 6))
 plt.subplots_adjust(left=0.1, right=0.85, top=0.8, bottom=0.2)
-fig.suptitle("Chart 2b", fontsize=16, y=0.95)  # Keep title position
+fig.suptitle("Chart 2b", fontsize=16, y=0.95)
 fig.text(0.5, 0.9, "Mapping Vehicle Ownership to Socioeconomic Indicators", ha='center', fontsize=10)
 ax2 = ax1.twinx()
 ax3 = ax1.twinx()
@@ -69,7 +69,7 @@ for i, area in enumerate(df['area']):
     ax1.axvline(x=line_x, color='gray', linestyle='--', linewidth=0.5)
     ax1.text(label_x , ax1.get_ylim()[1] * 1.02, area, rotation=45, verticalalignment='bottom', fontsize=8, color='gray')
 
-
+# generate plot
 ax1.set_xlabel("Average Number of Vehicles per Person", fontweight='bold')
 ax1.set_ylabel("Poverty Rate", color="blue", fontweight='bold')
 ax1.tick_params(axis='y', colors='blue')
